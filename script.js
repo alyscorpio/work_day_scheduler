@@ -28,3 +28,19 @@ $("#2 + .activity").val(localStorage.getItem("2pm"))
 $("#3 + .activity").val(localStorage.getItem("3pm"))
 $("#4 + .activity").val(localStorage.getItem("4pm"))
 $("#5 + .activity").val(localStorage.getItem("5pm"))
+
+function hour(){
+    var now = moment().hours();
+
+    $(".row").each(function() {
+        var TimeBlock = parseInt($(this).attr("id"))
+
+        if (now > timeBlock){
+            $(this).addClass("past")
+        } else if (now === timeBlock){
+            $(this).removeClass("past")
+            $(this).addClass("present")
+        }
+    }
+    )
+}
