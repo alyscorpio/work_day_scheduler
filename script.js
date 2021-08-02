@@ -18,3 +18,13 @@ function storeActivity(){
     console.log(typeof time)
     localStorage.setItem(time.split('')[1], description);
 }
+
+$("#09 + .activity").val(localStorage.getItem("9am"))
+$("#10 + .activity").val(localStorage.getItem("10am"))
+$("#11 + .activity").val(localStorage.getItem("11am"))
+$("#12 + .activity").val(localStorage.getItem("12pm"))
+$("#1 + .activity").val(localStorage.getItem("1pm"))
+$("#2 + .activity").val(localStorage.getItem("2pm"))
+$("#3 + .activity").val(localStorage.getItem("3pm"))
+$("#4 + .activity").val(localStorage.getItem("4pm"))
+$("#5 + .activity").val(localStorage.getItem("5pm"))
