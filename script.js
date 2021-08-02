@@ -33,14 +33,19 @@ function hour(){
     var now = moment().hours();
 
     $(".row").each(function() {
-        var TimeBlock = parseInt($(this).attr("id"))
+        var timeBlock = parseInt($(this).attr("id"))
 
         if (now > timeBlock){
             $(this).addClass("past")
         } else if (now === timeBlock){
             $(this).removeClass("past")
             $(this).addClass("present")
+        } else {
+            $(this).removeClass("past")
+            $(this).removeClass("present")
+            $(this).addClass("future")
         }
     })
 }
+
 timeBlock();
