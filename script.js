@@ -41,6 +41,6 @@ function hour(){
             $(this).removeClass("past")
             $(this).addClass("present")
         }
-    }
-    )
+    })
 }
+timeBlock();
