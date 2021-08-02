@@ -5,7 +5,7 @@ console.log(saveButton)
 
 // Current day/date from moment.js
 var today = moment().format('dddd, MMMM Do YYYY');
-timeDisplay.text(today);
+time.text(today);
 
 for (i = 0; i < saveButton.length; i++){
     saveButton[i].addEventListener("click", storeActivity);
