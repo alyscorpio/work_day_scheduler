@@ -37,6 +37,8 @@ textarea {
 }
   
 .hour {
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
@@ -58,6 +60,9 @@ textarea {
 }
   
 .saveBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -65,15 +70,14 @@ textarea {
     color: white;
 }
   
-.saveBtn i:hover {
+.saveBtn:hover {
     font-size: 20px;
+    background-color: rgb(169, 40, 194);
     transition: all 0.3s ease-in-out;
 }
-
-.footer {
-    height: 200px;
-}
-
-.footer-text {
-    margin-right: 1000px;
+  
+.activity{
+    text-align: center;
+    border:solid;
+    border-width: 1px;
 }
