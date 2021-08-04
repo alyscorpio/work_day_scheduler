@@ -1,4 +1,4 @@
-# <work-day-scheduler>
+## Work Day Scheduler
 
 ## Description
 For this project, I created a simple calendar application that allows users to save events for each hour of the day. I was given starter code, and asked to write JavaScript code that integrates Moment.js and the browser's local storage. 
